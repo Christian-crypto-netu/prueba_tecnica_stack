@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+
+<div class="titulo">
+    <h1>Crear Empleado</h1>
+</div>
+
+<div class="subtitulo">
+    <h3>Los campos con asteriscos ( * ) son obligatorios</h3>
+</div>
+
+<div class="formulario">
+    <form class="form" action="">
+        <div class="nombre">
+            <label for="">Nombre Completo *</label>
+            <input type="text" placeholder="Nombre completo del empleado">
+        </div>
+        <div class="correo">
+            <label for="">Correo Electrónico *</label>
+            <input type="email" placeholder="Correo electrónico">
+        </div>
+        <div class="sexo">
+            <label for="sexo">Sexo *</label>
+            <div>
+                <input type="radio" id="" name="" value="">Masculino<br>
+                <input type="radio" id="" name="" value="">Femenino
+            </div>
+        </div>
+        <div class="area">
+            <label for="">Área *</label>
+            <select id="campos" name="campos">
+                <option value="admin">Administración</option>
+                <option value="ingenieria">Ingeniería</option>
+                <option value="negocio">Desarrollo de Negocio</option>
+                <option value="proyecto">Proyecto</option>
+                <option value="servicios">Servicios</option>
+                <option value="calidad">Calidad</option>
+            </select>
+        </div>
+        <div class="descripcion">
+            <label for="">Descripción *</label>
+            <textarea name="" id="" placeholder="Descripción de la experiencia del empleado"></textarea><br>
+        </div>
+        <div class="descripcion-2">
+            <input type="checkbox" id="" name="" value="">Deseo recibir boletín informativo
+        </div>
+        <div class="roles">          
+            <label for="">Roles *</label>
+            <div>
+                <input type="checkbox" id="" name="" value="">Profesional de proyectos - Desarrollador<br>
+                <input type="checkbox" id="" name="" value="">Gerente estratégico<br>
+                <input type="checkbox" id="" name="" value="">Auxiliar administrativo
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
+</div>
+
+<app-footer></app-footer>

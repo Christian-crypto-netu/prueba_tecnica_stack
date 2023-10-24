@@ -1,0 +1,160 @@
+
+.titulo{
+    text-align: center;
+    margin: 20px;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo h3{
+    text-align: center;
+    margin: 0px 20px 20px;
+    padding: 10px;
+    background-color: #f0a2a2;
+    color: #dd1b16;
+    width: 36%;
+    border-radius: 5px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+label{
+    font-weight: bold;
+    color: #dd1b16;
+}
+
+.nombre{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 10px 0;
+}
+
+.nombre input{
+    display: flex;
+    padding: 10px;
+    width: 500px;
+    margin: 12px;
+}
+
+.correo{
+    display: flex;
+    align-items: center;
+}
+
+.correo input{
+    display: flex;
+    padding: 10px;
+    width: 500px;
+    margin: 10px;
+}
+
+.sexo{
+    display: flex;
+    margin: 20px 10px 10px 0;
+}
+
+.sexo > div{
+    margin-left: 20px;
+}
+
+.sexo input{
+    margin: 0px 5px;
+}
+
+.area{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px 10px 0;
+}
+
+.area select{
+    display: flex;
+    padding: 10px;
+    width: 625px;
+    margin: 10px;
+}
+
+.descripcion{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0;
+}
+
+.descripcion textarea{
+    display: flex;
+    padding: 10px;
+    width: 550px;
+    margin: 10px;
+}
+
+.descripcion-2{
+    display: flex;
+    justify-content: start;
+    margin: -10px 10px 10px 105px;
+}
+
+.descripcion-2 input{
+    margin-right: 10px;
+}
+
+.roles{
+    display: flex;
+    margin: 20px 10px 10px 0;
+}
+
+.roles > div{
+    margin-left: 20px;
+}
+
+.roles input{
+    margin: 0px 5px;
+}
+
+input, select, textarea{
+    border-radius: 5px;
+    border: solid 2px #b3b3b3;
+}
+
+input:focus{
+    border: solid 2px #dd1b16;
+    outline: none;
+}
+
+select:focus{
+    border: solid 2px #dd1b16;
+    outline: none;
+}
+
+textarea:focus{
+    border: solid 2px #dd1b16;
+    outline: none;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px 10px;
+}
+
+button{
+    font-weight: bold;
+    font-size: 15px;
+    color: #dd1b16;
+    border: solid 2px #dd1b16;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: #a6120d;
+    border: solid 2px #a6120d;
+    cursor: pointer;
+    background-color: #b3b3b3;
+}
