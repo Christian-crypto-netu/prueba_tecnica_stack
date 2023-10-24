@@ -31,6 +31,7 @@ const EmpleadoController = {
     Empleado.create(nuevoEmpleado, (err, result) => {
       if (err) {
         res.status(500).json({ error: 'Error al crear empleado' });
+        console.log(err);
       } else {
         res.status(201).json({ message: 'Empleado creado con exito', id: result.insertId });
       }
@@ -64,7 +65,7 @@ const EmpleadoController = {
         if (result.affectedRows === 0) {
           res.status(404).json({ error: 'Empleado no encontrado' });
         } else {
-          res.status(200).jsom({ message: 'Empleado eliminado con exito' });
+          res.status(200).json({ message: 'Empleado eliminado con exito' });
         }
       }
     });

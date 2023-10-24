@@ -9,7 +9,7 @@ const Empleado = {
   },
 
   create: (empleado, callback) => {
-    db.query('INSERT INTO empleado (nombre, email, sexo, area_id, boletin, descripcion VALUES (?, ?, ?, ?, ?, ?)',
+    db.query('INSERT INTO empleado (nombre, email, sexo, area_id, boletin, descripcion) VALUES (?, ?, ?, ?, ?, ?)',
     [empleado.nombre, empleado.email, empleado.sexo, empleado.area_id, empleado.boletin, empleado.descripcion], callback);
   },
 
