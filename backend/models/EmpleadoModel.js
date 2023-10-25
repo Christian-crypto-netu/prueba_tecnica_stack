@@ -10,12 +10,12 @@ const Empleado = {
 
   create: (empleado, callback) => {
     db.query('INSERT INTO empleado (nombre, email, sexo, area_id, boletin, descripcion) VALUES (?, ?, ?, ?, ?, ?)',
-    [empleado.nombre, empleado.email, empleado.sexo, empleado.area_id, empleado.boletin, empleado.descripcion], callback);
+    [empleado.nombre, empleado.email, empleado.sexo, empleado.area_id, empleado.boletin, empleado.descripcion, empleado.roles], callback);
   },
 
   update: (id, empleado, callback) => {
     db.query('UPDATE empleado SET nombre = ?, email = ?, sexo = ?, area_id = ?, boletin = ?, descripcion = ? WHERE id = ?',
-    [empleado.nombre, empleado.email, empleado.sexo, empleado.area_id, empleado.boletin, empleado.descripcion, id],
+    [empleado.nombre, empleado.email, empleado.sexo, empleado.area_id, empleado.boletin, empleado.descripcion, empleado.roles, id],
     callback);
   },
 

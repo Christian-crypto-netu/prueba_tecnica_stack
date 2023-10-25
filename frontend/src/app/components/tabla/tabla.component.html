@@ -1,1 +1,50 @@
-<p>tabla works!</p>
+<app-navbar></app-navbar>
+
+<div class="titulo">
+    <h1>Lista de Empleados</h1>
+</div>
+
+<div class="subtitulo">
+    <a routerLink="/registrar" ><i class="fa-solid fa-user-plus"></i>Crear Empleado</a>
+</div>
+
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th><i class="fa-solid fa-user"></i>Nombre</th>
+                <th><i class="fa-solid fa-at"></i>Email</th>
+                <th><i class="fa-solid fa-venus-mars"></i>Sexo</th>
+                <th><i class="fa-solid fa-bag-shopping"></i>Área</th>
+                <th><i class="fa-solid fa-envelope"></i>Boletín</th>
+                <th><i class="fa-solid fa-bars"></i>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>Masculino</td>
+                <td>Ventas</td>
+                <td>Sí</td>
+                <td class="action-buttons">
+                    <a class="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a class="delete"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>Femenino</td>
+                <td>Marketing</td>
+                <td>No</td>
+                <td class="action-buttons">
+                    <a class="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a class="delete"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<app-footer></app-footer>
